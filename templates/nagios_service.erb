@@ -1,0 +1,79 @@
+define service {
+        check_command                  <%= @check_command %>
+        service_description            <%= @service_description %>
+        <%- if  @hostgroup_name and @hostgroup_name != "" -%>
+        hostgroup_name                 <%= @hostgroup_name %>          
+        <%- end -%>
+        <%- if  @host_name and @host_name != "" -%>
+        host_name                      <%= @host_name %>            
+        <%- end -%>
+        <%- if  @use and @use != "" -%>
+        use                            <%= @use %>
+        <%- end -%>    
+        <%- if  @check_period and @check_period != "" -%>              
+        check_period                   <%= @check_period %>
+        <%- end -%>
+        <%- if @contacts and @contacts != "" -%>
+        contacts                       <%= @contacts %>
+        <%- end -%>
+        <%- if  @contact_groups and @contact_groups != "" -%>             
+        contact_groups                 <%= @contact_groups %>
+        <%- end -%>
+        <%- if  @notification_period and @notification_period != "" -%>           
+        notification_period            <%= @notification_period %>
+        <%- end -%>
+        <%- if  @active_checks_enabled and @active_checks_enabled != "" -%>    
+        active_checks_enabled          <%= @active_checks_enabled %>
+        <%- end -%>
+        <%- if  @check_freshness and @check_freshness != "" -%>
+        check_freshness                <%= @check_freshness %>
+        <%- end -%>
+        <%- if  @event_handler_enabled and @event_handler_enabled != "" -%>           
+        event_handler_enabled          <%= @event_handler_enabled %>
+        <%- end -%>
+        <%- if  @failure_prediction_enabled and @failure_prediction_enabled != "" -%>
+        failure_prediction_enabled     <%= @failure_prediction_enabled %>
+        <%- end -%>
+        <%- if  @flap_detection_enabled and @flap_detection_enabled != "" -%>
+        flap_detection_enabled         <%= @flap_detection_enabled %>
+        <%- end -%>
+        <%- if  @is_volatile and @is_volatile != "" -%>
+        is_volatile                    <%= @is_volatile %>
+        <%- end -%>
+        <%- if  @max_check_attempts an d @max_check_attempts != "" -%>
+        max_check_attempts             <%= @max_check_attempts %>
+        <%- end -%>
+        <%- if  @normal_check_interval and @normal_check_interval != "" -%>
+        normal_check_interval          <%= @normal_check_interval %>
+        <%- end -%>
+        <%- if  @notification_interval and @notification_interval != "" -%>
+        notification_interval          <%= @notification_interval %>
+        <%- end -%>
+        <%- if  @notification_options and @notification_options != "" -%>
+        notification_options           <%= @notification_options %>
+        <%- end -%>
+        <%- if  @notifications_enabled and @notifications_enabled != "" -%>
+        notifications_enabled          <%= @notifications_enabled %>
+        <%- end -%>
+        <%- if  @obsess_over_service and @obsess_over_service != "" -%>
+        obsess_over_service            <%= @obsess_over_service %>
+        <%- end -%>
+        <%- if  @parallelize_check and @parallelize_check != "" -%>
+        parallelize_check              <%= @parallelize_check %>
+        <%- end -%>
+        <%- if  @passive_checks_enabled and @passive_checks_enabled != "" -%>           
+        passive_checks_enabled         <%= @passive_checks_enabled %>
+        <%- end -%>
+        <%- if  @process_perf_data and @process_perf_data != "" -%>
+        process_perf_data              <%= @process_perf_data %>
+        <%- end -%>
+        <%- if  @retain_nonstatus_information and @retain_nonstatus_information != "" -%>    
+        retain_nonstatus_information   <%= @retain_nonstatus_information %>
+        <%- end -%>
+        <%- if  @retain_status_information and @retain_status_information != "" -%>
+        retain_status_information      <%= @retain_status_information %>
+        <%- end -%>
+        <%- if  @retry_check_interval and @retry_check_interval != "" -%>
+        retry_check_interval           <%= @retry_check_interval %>
+        <%- end -%>         
+}

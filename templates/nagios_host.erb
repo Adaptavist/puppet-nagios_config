@@ -1,0 +1,30 @@
+define host {
+        <%- if  @address and @address != "" -%>
+        address                        <%= @address %>
+        <%- end -%>
+        alias                          <%= @alias %>
+        check_command                  <%= @check_command %>
+        check_interval                 <%= @check_interval %>
+        check_period                   <%= @check_period %>
+        <%- if  @contact_groups and @contact_groups != "" -%>
+        contact_groups                 <%= @contact_groups %>
+        <%- end -%>
+        host_name                      <%= @name %>
+        hostgroups                     <%= @hostgroups %>
+        max_check_attempts             <%= @max_check_attempts %>
+        notification_interval          <%= @notification_interval %>
+        notification_options           <%= @notification_options %>
+        notification_period            <%= @notification_period %>
+        process_perf_data              <%= @process_perf_data %>
+        retain_nonstatus_information   <%= @retain_nonstatus_information %>
+        retry_interval                 <%= @retry_interval %>
+        <%- if @use and use != "" -%>
+        use                            <%= @use %>
+        <%- end -%>
+        <%- if @custom_variables and @custom_variables != "" -%>
+        #custom variables
+        <%- custom_variables.split(',').each do | custom_variable | -%>
+        <%= custom_variable %>
+        <%- end -%>
+        <%- end -%>
+}
