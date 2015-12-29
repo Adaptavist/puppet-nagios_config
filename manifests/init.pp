@@ -10,7 +10,7 @@ class nagios_config (
     ) {
 
     # work out if we should be purging the host config dir of unmanaged files or not
-    if str2bool($purge_host_configs) {
+    if str2bool($purge_configs) {
         $real_purge = true
     } else {
         $real_purge = false
