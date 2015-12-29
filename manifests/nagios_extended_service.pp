@@ -16,7 +16,7 @@ define nagios_config::nagios_extended_service (
     $notification_period          = undef,
     $ensure                       = 'present',
     $active_checks_enabled        = '1',
-    $check_freshness              = '0',                  
+    $check_freshness              = '0',
     $event_handler_enabled        = '1',
     $failure_prediction_enabled   = '1',
     $flap_detection_enabled       = '1',
