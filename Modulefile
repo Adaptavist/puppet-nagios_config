@@ -1,6 +1,6 @@
 name 'adaptavist/nagios_config'
-version '0.0.5'
-source 'ssh://git@stash.adaptavist.com:7999/pup/puppet-nagios_config.git'
+version '0.0.6'
+source 'https://github.com/Adaptavist/puppet-nagios_config.git'
 author 'mhope'
 summary 'nagios_config Module' 
 license 'Apache2'
