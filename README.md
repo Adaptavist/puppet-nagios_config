@@ -1,4 +1,5 @@
 # nagios_config Module
+[![Build Status](https://travis-ci.org/Adaptavist/puppet-nagios_config.svg?branch=master)](https://travis-ci.org/Adaptavist/puppet-nagios_config)
 
 ## Overview
 
