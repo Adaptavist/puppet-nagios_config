@@ -1,6 +1,6 @@
 
-# Define: nagios::custom_plugin
-define nagios::custom_plugin (
+# Define: nagios_config::custom_plugin
+define nagios_config::custom_plugin (
     $local_path,
     $file_name,
     $gitrepo    = 'false',
