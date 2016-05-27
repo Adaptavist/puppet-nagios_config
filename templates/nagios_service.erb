@@ -40,7 +40,7 @@ define service {
         <%- if  @is_volatile and @is_volatile != "" -%>
         is_volatile                    <%= @is_volatile %>
         <%- end -%>
-        <%- if  @max_check_attempts an d @max_check_attempts != "" -%>
+        <%- if  @max_check_attempts and @max_check_attempts != "" -%>
         max_check_attempts             <%= @max_check_attempts %>
         <%- end -%>
         <%- if  @normal_check_interval and @normal_check_interval != "" -%>
