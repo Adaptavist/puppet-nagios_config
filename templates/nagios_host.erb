@@ -2,7 +2,7 @@ define host {
         <%- if  @address and @address != "" -%>
         address                        <%= @address %>
         <%- end -%>
-        alias                          <%= @alias %>
+        alias                          <%= @host_alias %>
         check_command                  <%= @check_command %>
         check_interval                 <%= @check_interval %>
         check_period                   <%= @check_period %>

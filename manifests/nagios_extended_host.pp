@@ -24,7 +24,7 @@ define nagios_config::nagios_extended_host (
     $notes                        = undef,
     $notes_url                    = undef,
     $use                          = undef,
-    $alias                        = undef,
+    $host_alias                   = undef,
 ) {
 
     case $ensure {
