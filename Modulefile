@@ -1,5 +1,5 @@
 name 'adaptavist/nagios_config'
-version '1.0.0'
+version '1.0.1'
 source 'https://github.com/Adaptavist/puppet-nagios_config.git'
 author 'mhope'
 summary 'nagios_config Module' 
