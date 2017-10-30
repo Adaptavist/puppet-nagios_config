@@ -7,6 +7,7 @@ define nagios_config::custom_plugin (
     $plugin_url = 'false',
     $user       = 'root',
     $group      = 'root',
+    $perms      = '755',
     ) {
     if ($gitrepo != 'false'){
         exec {
@@ -33,7 +34,7 @@ define nagios_config::custom_plugin (
 
     exec {
         "change permissions to plugin file ${name}":
-            command   => "chown ${user}:${group} ${local_path}/${file_name}",
+            command   => "chown ${user}:${group} ${local_path}/${file_name} && chmod ${perms} ${local_path}/${file_name}",
             logoutput => on_failure,
     }
 }
