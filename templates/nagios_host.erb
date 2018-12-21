@@ -24,7 +24,7 @@ define host {
         <%- if @custom_variables and @custom_variables != "" -%>
         #custom variables
         <%- @custom_variables.split(',').each do | custom_variable | -%>
-        <%= custom_variable %>
+        <%= custom_variable.gsub('_COMMA_', ',') %>
         <%- end -%>
         <%- end -%>
 }
